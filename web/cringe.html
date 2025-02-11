@@ -4,12 +4,16 @@
 <head>
 
 <script>
-	function addOne(n) {
-		return n + 1;
+	function addOne() {
+		const num = document.getElementById("num");
+		const realNum = Number(num.value);
+		num.value = realNum + 1;
 	}
 
-	function subtractOne(n) {
-		return n - 1;
+	function subtractOne() {
+		const num = document.getElementById("num");
+		const realNum = Number(num.value);
+		num.value = realNum - 1;
 	}
 </script>
 
@@ -22,8 +26,8 @@
 		<input type="text" id="num" name="num"><br><br>
 	</form>
 
-	<button onclick="getElementById('num').value = addOne(Number(document.getElementById('num').value))">Add One</button>
-	<button onclick="getElementById('num').value = subtractOne(Number(document.getElementById('num').value))">Subtract One</button>
+	<button onclick="addOne(num);">Add One</button>
+	<button onclick="subtractOne(num);">Subtract One</button>
 
 </body>
 </html>
