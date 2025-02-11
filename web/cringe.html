@@ -22,8 +22,8 @@
 		<input type="text" id="num" name="num"><br><br>
 	</form>
 
-	<button onclick="getElementById('num').value = addOne(getElementById('num').value)">Add One</button>
-	<button onclick="getElementById('num').value = subtractOne(getElementById('num').value)">Subtract One</button>
+	<button onclick="getElementById('num').value = addOne(Number(document.getElementById('num').value))">Add One</button>
+	<button onclick="getElementById('num').value = subtractOne(Number(document.getElementById('num').value))">Subtract One</button>
 
 </body>
 </html>
